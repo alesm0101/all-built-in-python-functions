@@ -53,3 +53,57 @@ print(users_id_sorted_inverse)  # [10, 7, 0]
 clients = ['joshep', 'claire' , 'david',  'zoe']
 clients.reverse()
 print(clients) # ['zoe', 'david', 'claire', 'joshep'] NO ALPHABETICAL, just reverse order
+
+
+magicians = ['alice', 'carol', 'paul']
+for magician in magicians:
+  print(f'This is {magician}')
+
+for val in range(2,6):
+  print(val) # 2 3 4 5 (6 is not printed )
+
+  print(range(6)) #  = print(range(0, 6))
+
+numbers_list = list(range(0,6))
+print(numbers_list) # [0, 1, 2, 3, 4, 5]
+
+event_numbers = list(range(2, 11, 2)) # starts in 2 and add +2 until 11 (not included)
+print(event_numbers) # [2, 4, 6, 8, 10]
+
+digits = [1,2,3,4,5,6]
+print(min(digits)) # 1
+print(max(digits)) # 6
+print(sum(digits)) # 21
+
+square = [value**2 for value in range(1, 11)]
+print(square) # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+###
+
+desserts = ["1 - cake", "2 - lemon pie", "3 - cheekcase", "4 - muffin"]
+print(desserts[0:2]) # "1 - cake", "2 - lemon pie"
+print(desserts[:2]) #  "1 - cake", "2 - lemon pie"
+print(desserts[2:]) # "3 - cheekcase", "4 - muffin"
+print(desserts[-3:]) # "2 - lemon pie", "3 - cheekcase", "4 - muffin"
+print(desserts[:]) # ["1 - cake", "2 - lemon pie", "3 - cheekcase", "4 - muffin"]
+
+# my_favorite_dessert = desserts[:].append('macarrons') # DOESN'T WORK : None
+my_favorite_dessert = desserts[:]
+my_favorite_dessert.append('macarrons')
+
+print(desserts)
+print(my_favorite_dessert)
+
+### TUPLAS
+dimension = (20, 40)
+dimension = (20,)
+dimension = 20,
+print(type(dimension)) # <class 'tuple'>
+
+toppings = ['mushrooms', 'onions', 'pineapple']
+print('mushrooms' in toppings) # True
+print('sugar' not in toppings) # True
+
+user_list = []
+if not user_list:
+  print('Is a empty list')
