@@ -9,6 +9,8 @@ motorcycles = ['yamaha']
 motorcycles.append('triumph')
 print(motorcycles)  # ['yamaha', 'triumph']
 
+print(type(motorcycles)) # <class 'list'>
+
 cars = []
 cars.insert(-1, 'honda')
 print(cars) # ['honda']
@@ -94,7 +96,8 @@ my_favorite_dessert.append('macarrons')
 print(desserts)
 print(my_favorite_dessert)
 
-### TUPLAS
+
+### ---> TUPLAS
 dimension = (20, 40)
 dimension = (20,)
 dimension = 20,
